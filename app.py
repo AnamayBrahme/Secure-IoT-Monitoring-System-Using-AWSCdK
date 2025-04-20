@@ -3,11 +3,11 @@ import os
 
 import aws_cdk as cdk
 
-from secure_drone_mon_sys.secure_drone_mon_sys_stack import SecureDroneMonSysStack
+from drone_stack.drone_stack import DroneStack
 
 
 app = cdk.App()
-SecureDroneMonSysStack(app, "SecureDroneMonSysStack",
+DroneStack(app, "DroneStack",
     # If you don't specify 'env', this stack will be environment-agnostic.
     # Account/Region-dependent features and context lookups will not work,
     # but a single synthesized template can be deployed anywhere.
