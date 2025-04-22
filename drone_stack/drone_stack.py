@@ -44,9 +44,4 @@ class DroneStack(Stack):
         # Attach Policy to Certificate
         iot.CfnPolicyPrincipalAttachment(self, "AttachPolicyToCert",policy_name=drone_policy.policy_name,principal=drone_cert.attr_arn)
 
-        iot_rule = iam.Role(self,"IoT_Rule",
-                            assumed_by=iam.ServicePrincipal("iot.amazonaws.com"),
-                            description="IoT Rule Role",
-                            managed_policies=[iam.ManagedPolicy.from_aws_managed_policy_name("service-role/AWSIoTDataAccess")]
-                            )
         
