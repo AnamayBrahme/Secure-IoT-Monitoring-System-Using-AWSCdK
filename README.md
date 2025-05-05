@@ -24,13 +24,22 @@ This phase provisions secure IoT device connectivity:
 Process telemetry data sent by the drone. An IoT Rule captures MQTT messages from the Phase 1 topic and triggers a Lambda function to store the data into DynamoDB.
 
 ---
+## 📦 Phase 3: AlertingStack (Completed ✅)
 
-## 🚀 Next Phase: Phase 3 (Coming Soon)
+### Components:
+- AWS IoT Rule
+- AWS Lambda Function - (alert_lambda.py)
+- AWS SNS
 
-### AlertingStack
-**Goal**: Add fault detection & notifications using:
-- CloudWatch Metrics/Alarms
-- Amazon SNS
+### Purpose:
+Implement an basic alerting system that triggers notifications when certain conditions are met (e.g., low battery, temperature abnormality).
+
+## 🚀 Next Phase: Phase 3a (Coming Soon)
+
+### AlertingStack - Advanced Workflows/Scenarios
+**Goal**: extend the alerting system by adding more advanced workflows and scenarios such as:
+- Integrating additional services: Adding integrations with other AWS services, such as CloudWatch for monitoring.
+- Advanced alerting scenarios: Complex condition checks and thresholds for drone telemetry.
 
 
 ## 💻 Simulator
