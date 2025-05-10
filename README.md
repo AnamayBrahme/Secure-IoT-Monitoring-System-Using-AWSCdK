@@ -34,7 +34,7 @@ Process telemetry data sent by the drone. An IoT Rule captures MQTT messages fro
 ### Purpose:
 Implement an basic alerting system that triggers notifications when certain conditions are met (e.g., low battery, temperature abnormality).
 
-## 📦 Phase 3: MonitoringStack (Completed ✅)
+## 📦 Phase 4: MonitoringStack (Completed ✅)
 
 ### Components:
 - AWS CloudWatch  
@@ -44,7 +44,7 @@ Implement an basic alerting system that triggers notifications when certain cond
 ### Purpose:
 Provide a basic monitoring and observability layer for the IoT system. Visualizes system health using a CloudWatch Dashboard and leverages default service-level metrics.
 
-## 🚀 Next Phase: Phase - APIGatewayStack  (Coming Soon)
+## 🚀 Next Phase: Phase5 - APIGatewayStack  (Coming Soon)
 
 ### 
 **Goal**: Enable on-demand data access for clients or dashboards through secure REST APIs. This will allow querying telemetry data (e.g., latest battery level, temperature) stored in DynamoDB, using HTTP endpoints exposed by API Gateway.
